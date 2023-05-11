@@ -80,9 +80,27 @@ header {
   text-align: center;
 }
 
+.servicepage {
+  height: 10px;
+  text-align: center;
+  display: block;
+}
+
+.servicepage > h1{
+  height: 50px;
+  font-size: 128px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.servicepage > h2{
+  font-size: 48px;
+  color:#ff671a;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 600px){
   main{
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr);}
   }
-  
-}
