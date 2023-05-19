@@ -57,13 +57,42 @@ header {
     color: #ff671a;
   }
 
+  .homepagediv {
+    align-items: center;
+  }
+
+  .homepagediv > h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .homepagediv > h3{
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .homepagebutton {
+    background-color: #ffffff;
+    color: #ff671a;
+    border: 1px #000000 solid;
+    border-radius: 8px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    text-align: center;
+    font-size: 48px;
+  }
+
   .productboxes {
     background-color: #ffffff;
 
     /*height: 320px;
     width: 320px;*/
 
-    border-color: #000000;
+    border-color: #ff671a;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -99,6 +128,26 @@ header {
   text-align: center;
 }
 
+.footerclass {
+  font-size: 16px;
+  color: #ffffff;
+  background-color:#ff671a;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+}
+
+.footerclass > a{
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.footerclass > a:visited{
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 600px){
   main{
