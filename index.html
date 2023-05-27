@@ -3,53 +3,64 @@
 
 <head>
     <!-- Structural Information for my website -->
-    <link rel="stylesheet" href= "styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Supercharge.gg Home</title>
 </head>
 
-
 <body>
     <header>
-    <h1>Supercharge.GG</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/products/">Products</a>
-            </li>
-            <li>
-                <a href="/services/">Services</a>
-            </li>
-            <li>
-                <a href="/about/">About</a>
-            </li>
-            <!--Creating an unordered list for my navigation bar at the top of my page. This appears on all pages-->
-        </ul>
-    </nav>
-</header>
+        <h1>Supercharge.GG</h1>
+        <!--Header title-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="products/index.html">Products</a>
+                </li>
+                <li>
+                    <a href="services/index.html">Services</a>
+                </li>
+                <li>
+                    <a href="about/index.html">About</a>
+                </li>
+                <!--Creating an unordered list for my navigation bar at the top of my page. This appears on all pages-->
+            </ul>
+        </nav>
+    </header>
 
-<section>
-    <main class="homepagediv">
-        <h2>The Ultimate Rocket League Tutorial Package Provider!</h2>
-        <video width="450" height="275" controls loop autoplay>
-            <source src="clip1edited.mp4" type="video/mp4">
-        </video>
+    <section>
+        <main class="homepagediv">
+            <h2>The Ultimate Rocket League Tutorial Package Provider!</h2>
+            <div class="video-container">
+                <video class="videoclass" width="450" height="275" controls loop autoplay>
+                    <source src="clip1edited.mp4" type="video/mp4">
+                    <!--Adding video number 1 on my homepage-->
+                </video>
+                <video class="videoclass" width="450" height="275" controls loop autoplay>
+                    <source src="clip2edited.mp4" type="video/mp4">
+                </video>
+            </div>
+            <h2>Become a Beast on the Rocket League Field!</h2>
+            <!--Adding video number 2 to my homepage-->
+        </main>
+    </section>
+    
+    
 
-        <video width="450" height="275" controls loop autoplay>
-            <source src="clip2edited.mp4" type="video/mp4">
-        </video>
-        <h2>Become a Beast on the Rocket League Field!</h2>
-    </main>
-</section>
+    <div class="homepagebutton">
+        <a href="products/index.html">View our products today!</a>
+    </div>
+    <!--Adding a product button as a fast link to the products page without pressing the products button-->
 
-<div class="homepagebutton">
-    <a href="/products/">View our products today!</a>
-</div>
+    <div class="spacer"></div>
 
-<footer class="footerclass">
-    <a href="/about/">About Us</a>
-</footer>
+    <footer class="footerclass">
+        <a href="about/index.html">About Us</a>
+    </footer>
+    <!--Adding an about button in the footer of the page-->
 
 </body>
+
+</html>

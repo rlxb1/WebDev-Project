@@ -1,6 +1,7 @@
 body {
     background-color:#000000;
     font-family: Arial, Helvetica, sans-serif
+    /* Adding information  about my font family and background colour of the webpage in general */
 }
 
 ul {
@@ -10,26 +11,28 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    /* Styling for my unordered list for the header */
 }
 
 h1 {
     font-size: 120%;
 }
 
-section{
+section {
   margin-top: 300px;
+  /* Spacing out my home page section so it does not appear blocked by the header */
 }
 
-main{
+main {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  column-gap: 3rem;
-  row-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 48px;
+  row-gap: 48px;
+  /* Adding a grid attribute to my home page / products page */
 }
 
 header {
-    padding: 48px;
     text-align: center;
     background: #ff671a;
     color: #ffffff;
@@ -38,6 +41,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+    /* CSS for my header to style it appropriately to the brand colours (orange white black) */
   }
 
   li {
@@ -46,6 +50,7 @@ header {
     color: #ff671a;
     border: 1px #000000 solid;
     border-radius: 8px;
+    /* CSS for my buttons in the header */
   }
 
   a {
@@ -55,22 +60,51 @@ header {
   a:visited {
     text-decoration: none;
     color: #ff671a;
+    /* Styling the links so when they're visited, they turn orange to match brand colours */
   }
 
+  section {
+    margin-top: 300px;
+  }
+  
   .homepagediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-
-  .homepagediv > h2{
-    color: #ffffff;
     text-align: center;
+    /* CSS to ensure that my contents are appearing in line with eachother accordingly */
+  }
+  
+  .homepagediv > h2 {
+    color: #ffffff;
     font-size: 60px;
   }
-
-  .homepagediv > h3{
+  
+  .homepagediv > h3 {
     color: #ffffff;
-    text-align: center;
+    /* Editing H2 and H3 text snippets exclusively to the homepagediv class */
   }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* CSS to ensure my video is displayed specifically how I want it */
+  }
+  
+  .videoclass {
+    max-width: 100%;
+    height: auto;
+    margin-right: 100px;
+    /* CSS to present my videos in a certain size, the margin is to adjust the size between the two videos */
+  }
+  
+  .videoclass:last-of-type {
+    margin-right: 0;
+    /* This is to prevent an unwanted gap on the side of the video, to keep it aligned close to center */
+  }
+  
 
   .homepagebutton {
     background-color: #ffffff;
@@ -84,29 +118,39 @@ header {
 
     text-align: center;
     font-size: 48px;
+    /* CSS for the button which directs user to products page, centered and lined up accordingly in colours I want */
   }
 
   .productboxes {
     background-color: #ffffff;
-
-    /*height: 320px;
-    width: 320px;*/
-
     border-color: #ff671a;
     border-width: 2px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    /* CSS for my product boxes on the products page, including their white background to contrast the black page backing, an orange border, and appropriate CSS */
 }
 
-.productboxes > h3{
+.productboxes img {
+    max-width: 400px;
+    height: auto;
+    /* Configuring the images in the product boxes being used as thumbnails (all images are free to use!) */
+}
+
+.productboxes h3 {
     font-size: 32px;
     color: #ff671a;
-    text-align: center;
 }
 
-.productboxes > p{
-  font-size: 16px;
-  color: #000000;
-  text-align: center;
+.productboxes p {
+    font-size: 16px;
+    color: #000000;
+    /* Editing basic font attributes to my h3 and p in the productboxes class */
 }
 
 .servicepage {
@@ -117,27 +161,55 @@ header {
 
 .servicepage > h1{
   height: 50px;
-  font-size: 128px;
+  font-size: 160px;
   color: #FFFFFF;
   text-align: center;
 }
 
 .servicepage > h2{
-  font-size: 48px;
+  font-size: 32px;
   color:#ff671a;
   text-align: center;
+  /* Editing my service page text for the h1 and h2 attributes to present it accordingly (very similarly to my about page text) */
+}
+
+.aboutpage {
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.aboutpage > h1 {
+  font-size: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+.aboutpage > h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  color:#ff671a;
+    /* Editing my about page text for the h1 and h2 attributes to present it accordingly (very similarly to my service page text) */
+}
+
+.spacer {
+  height: 160px;
+  /* A CSS spacer to separate my footer from the content in certain scenarios */
 }
 
 .footerclass {
   font-size: 16px;
   color: #ffffff;
-  background-color:#ff671a;
-  position: absolute;
+  background-color: #ff671a;
+  position: fixed;
   width: 100%;
+  height: 48px;
   bottom: 0;
   left: 0;
   text-align: center;
-
+  padding: 20px 0;
+  /* Footer CSS to make it appear a certain way, with the position being fixed on the page, allowing it to follow the scroll of the user, although appearing on the bottom for shorter pages */
 }
 
 .footerclass > a{
@@ -147,9 +219,18 @@ header {
 
 .footerclass > a:visited{
   color: #FFFFFF;
+  /* Information about my anchor and how it stays white even when visited */
+}
+
+@media screen and (max-width: 600px) {
+  .homepagediv {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px){
   main{
     grid-template-columns: repeat(1,1fr);}
   }
+
+  /* CSS to make specific classes appear in line with eachother in a specific way, toggling the width to 600px for presentation purposes */

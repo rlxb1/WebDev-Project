@@ -3,7 +3,7 @@
 
 <head>
     <!-- Structural Information for my website -->
-    <link rel="stylesheet" href= "/styles.css">
+    <link rel="stylesheet" href= "../styles.css">
     <title>Supercharge.gg Products</title>
 </head>
 
@@ -11,19 +11,20 @@
 <body>
     <header>
     <h1>Supercharge.GG</h1>
+    <!--Header title-->
     <nav>
         <ul>
             <li>
-                <a href="/">Home</a>
+                <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="/products/">Products</a>
+                <a href="../products/index.html">Products</a>
             </li>
             <li>
-                <a href="/services/">Services</a>
+                <a href="../services/index.html">Services</a>
             </li>
             <li>
-                <a href="/about/">About</a>
+                <a href="../about/index.html">About</a>
             </li>
             <!--Creating an unordered list for my navigation bar at the top of my page. This appears on all pages-->
         </ul>
@@ -32,26 +33,39 @@
 
 <section>
     <main>
+        <!--Adding 4x product boxes which explain about the product, with a thumbnail image, title, and brief description.-->
         <div class="productboxes">
+            <img src="thumb1.jpg" alt="The Fundamentals Training Packs">
             <h3>Rocket League Training Packs - The Fundamentals</h3>
             <p>These training packs will assist amateur players with their improvement towards the fundamental mechanics of the game, such as power shots, half flips, and efficient defense.</p>
         </div>
 
         <div class="productboxes">
+            <img src="thumb2.jpg" alt="Beginners Guide">
             <h3>Welcome to Rocket League - Beginners Guide!</h3>
             <p>A product specifically made for those who are new to the game! Teaching you the basics of the game, how it works, what you should focus on as a new player, and more!</p>
         </div>
 
         <div class="productboxes">
+            <img src="thumb3.jpg" alt="The Fundamentals Videos">
             <h3>Rocket League Videos - The Fundamentals</h3>
             <p>These videos will assist amateur players with their improvement towards the fundamental mechanics of the game, such as power shots, half flips, and efficient defense.</p>
         </div>
 
         <div class="productboxes">
+            <img src="thumb4.jpg" alt="Monthly Subscription">
             <h3>Monthly Subscription to our Content!</h3>
             <p>Be the first to know about our new content - granting you with early access to our videos, exclusive training packs, priority boosting sessions, and more!</p>
         </div>
     </main>
 </section>
+
+<div class="spacer"></div>
+<!--Adding a spacer so the footer does not cover the bottom boxes-->
+
+<footer class="footerclass">
+    <a href="../about/index.html">About Us</a>
+</footer>
+<!--Direct link to about us page in the footer-->
 
 </body>
